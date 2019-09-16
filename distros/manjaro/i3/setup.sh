@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sudo pacman -Sy arandr
-sudo pacman -Sy yay
+sudo pacman -S arandr
+sudo pacman -S yay
 yay -S spotify
 
 # Install sublime text
@@ -12,3 +12,9 @@ echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable
 sudo pacman -Syu sublime-text
 
 # --------------------
+
+# Devops tools
+sudo pacman -S aws-cli
+sudo pacman -S kubectx
+sudo pacman -S terraform
+yay -S helm
