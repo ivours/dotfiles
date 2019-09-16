@@ -1,3 +1,3 @@
 # Websites
-terminal.sexy
-thomashunter.name/i3-configurator
+https://terminal.sexy  
+https://thomashunter.name/i3-configurator
