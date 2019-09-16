@@ -1,3 +1,3 @@
 # Websites
-terminal.sexy  
-thomashunter.name/i3-configurator
+[link text itself]: terminal.sexy  
+[link text itself]: thomashunter.name/i3-configurator
