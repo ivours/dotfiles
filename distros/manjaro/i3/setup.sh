@@ -2,6 +2,7 @@
 
 sudo pacman -S arandr
 sudo pacman -S yay
+sudo pacman -S net-tools
 yay -S spotify
 
 # Install sublime text
@@ -16,5 +17,6 @@ sudo pacman -Syu sublime-text
 # Devops tools
 sudo pacman -S aws-cli
 sudo pacman -S kubectx
+sudo pacman -S kubectl
 sudo pacman -S terraform
 yay -S helm
