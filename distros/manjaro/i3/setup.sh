@@ -5,6 +5,9 @@ sudo pacman -S yay
 sudo pacman -S net-tools
 yay -S spotify
 
+# Remove ALSA and install PulseAudio
+install_pulse
+
 # Install sublime text
 curl -O https://download.sublimetext.com/sublimehq-pub.gpg && \
 sudo pacman-key --add sublimehq-pub.gpg && \
