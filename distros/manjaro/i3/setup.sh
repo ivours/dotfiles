@@ -3,6 +3,7 @@
 sudo pacman -S arandr
 sudo pacman -S yay
 sudo pacman -S net-tools
+sudo pacman -S code
 yay -S spotify
 
 # Remove ALSA and install PulseAudio
