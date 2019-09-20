@@ -43,11 +43,11 @@ bindsym $mod+z exec --no-startup-id morc_menu
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
 
-exec --no-startup-id volumeicon
-bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
-#exec --no-startup-id pulseaudio
-#exec --no-startup-id pa-applet
-#bindsym $mod+Ctrl+m exec pavucontrol
+#exec --no-startup-id volumeicon
+#bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
+exec --no-startup-id start-pulseaudio-x11
+exec --no-startup-id pa-applet
+bindsym $mod+Ctrl+m exec pavucontrol
 
 ################################################################################################
 
@@ -351,9 +351,9 @@ bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #000000 #000000 #FFFFFF #FDF6E3
-  client.focused_inactive #5F676A #5F676A #FFFFFF #484E50
-  client.unfocused        #222222 #222222 #888888 #292D2E
+  client.focused          #0099CC #0099CC #000000 #FDF6E3
+  client.focused_inactive #808080 #5F676A #FFFFFF #484E50
+  client.unfocused        #000000 #222222 #888888 #292D2E
   client.urgent           #2F343A #900000 #FFFFFF #900000
   client.placeholder      #0C0C0C #0C0C0C #FFFFFF #000000 
 
