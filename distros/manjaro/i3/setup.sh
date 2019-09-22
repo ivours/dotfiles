@@ -4,6 +4,7 @@ sudo pacman -S arandr
 sudo pacman -S yay
 sudo pacman -S net-tools
 sudo pacman -S code
+sudo pacman -S termite
 yay -S xkb-switch
 yay -S oomox
 yay -S spotify
