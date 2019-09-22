@@ -417,6 +417,5 @@ mode "$mode_gaps_outer" {
 }
 
 # keyboard layout config
-exec --no-startup-id "setxkbmap latam,us"
 bindsym $mod+k exec xkb-switch -n
 
