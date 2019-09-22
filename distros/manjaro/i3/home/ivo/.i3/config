@@ -351,7 +351,7 @@ bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #0099CC #0099CC #000000 #FDF6E3
+  client.focused          #7bb54d #7bb54d #000000 #FDF6E3
   client.focused_inactive #808080 #5F676A #FFFFFF #484E50
   client.unfocused        #000000 #222222 #888888 #292D2E
   client.urgent           #2F343A #900000 #FFFFFF #900000
@@ -416,6 +416,7 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-# shortcut for keyboard layout switch
+# keyboard layout config
+exec --no-startup-id "setxkbmap latam,us"
 bindsym $mod+k exec xkb-switch -n
 
