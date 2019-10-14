@@ -351,7 +351,7 @@ bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #7bb54d #7bb54d #000000 #FDF6E3
+  client.focused          #AAAAAA #AAAAAA #000000 #FDF6E3
   client.focused_inactive #808080 #5F676A #FFFFFF #484E50
   client.unfocused        #000000 #222222 #888888 #292D2E
   client.urgent           #2F343A #900000 #FFFFFF #900000
@@ -417,5 +417,8 @@ mode "$mode_gaps_outer" {
 }
 
 # keyboard layout config
+exec "setxkbmap latam,us"
 bindsym $mod+k exec xkb-switch -n
 
+# fix dell xps 9360 headphone hissing
+exec "amixer -c PCH cset 'name=Headphone Mic Boost Volume' 1"
