@@ -52,12 +52,12 @@ bindsym $mod+Ctrl+m exec pavucontrol
 ################################################################################################
 
 # Screen brightness controls
-# bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
-# bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
+# bindsym XF86MonBrightnessUp exec "xbacklight -inc 5; notify-send 'brightness up'"
+# bindsym XF86MonBrightnessDown exec "xbacklight -dec 5; notify-send 'brightness down'"
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-bindsym $mod+i exec calamares_polkit
+bindsym $mod+i exec "flameshot gui"
 bindsym $mod+Ctrl+a exec terminal -e 'setup'
 bindsym $mod+F2 exec palemoon
 bindsym $mod+F3 exec pcmanfm
@@ -70,7 +70,6 @@ bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart du
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
-bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help_live.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # focus_follows_mouse no
@@ -364,8 +363,8 @@ bindsym $mod+m bar mode toggle
 #############################
 
 # Set inner/outer gaps
-gaps inner 14
-gaps outer -2
+gaps inner 0
+gaps outer 0
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>
@@ -417,8 +416,12 @@ mode "$mode_gaps_outer" {
 }
 
 # keyboard layout config
-exec "setxkbmap latam,us"
+exec "setxkbmap us,latam"
 bindsym $mod+k exec xkb-switch -n
 
 # fix dell xps 9360 headphone hissing
 exec "amixer -c PCH cset 'name=Headphone Mic Boost Volume' 1"
+
+# set screen mode shortcuts
+bindsym $mod+Shift+h exec "~/.screenlayout/home.sh"
+bindsym $mod+Shift+n exec "~/.screenlayout/notebook.sh"
