@@ -28,8 +28,6 @@ sudo timedatectl set-ntp true
 sudo pacman -S aws-cli
 sudo pacman -S kubectx
 sudo pacman -S kubectl
-sudo pacman -S terraform
-yay -S helm
 
 # KOPS
 curl -LO https://github.com/kubernetes/kops/releases/download/$(curl -s https://api.github.com/repos/kubernetes/kops/releases/latest | grep tag_name | cut -d '"' -f 4)/kops-linux-amd64
