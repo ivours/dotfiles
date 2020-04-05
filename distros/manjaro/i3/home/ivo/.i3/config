@@ -320,7 +320,7 @@ set_from_resource $term_color15    color15
 bar {
 	i3bar_command i3bar
 	status_command i3status
-	position bottom
+	position top
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 #	tray_output primary
@@ -332,11 +332,11 @@ bar {
 	strip_workspace_numbers yes
 
     colors {
-        background #000000
+        background #122D33
         statusline #FFFFFF
         separator  #666666
 
-#                      border  backgr. text
+#                          border  backgr. text
         focused_workspace  #5F676A #FFFFFF #000000
         active_workspace   #333333 #222222 #FFFFFF
         inactive_workspace #333333 #222222 #888888
