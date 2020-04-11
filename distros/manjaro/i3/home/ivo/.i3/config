@@ -34,7 +34,7 @@ bindsym $mod+Shift+q kill
 
 # start program launcher
 #bindsym $mod+d exec --no-startup-id dmenu_recency
-bindsym $mod+d exec "dmenu_run -nf '#BBBBBB' -nb '#000000' -sb '#FFFFFF' -sf '#000000' -fn 'monospace-10' -p 'dmenu prompt &gt;'"
+bindsym $mod+d exec "dmenu_run -nf '#FFFFFF' -nb '#122D33' -sb '#FFFFFF' -sf '#000000' -fn 'monospace-10' -p 'dmenu prompt >'"
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
@@ -271,7 +271,7 @@ mode "resize" {
 bindsym $mod+l exec --no-startup-id blurlock
 
 # Autostart applications
-exec --no-startup-id nitrogen --restore; sleep 1; compton -b
+exec --no-startup-id nitrogen --restore; sleep 1; compton -b --unredir-if-possible
 # exec --no-startup-id start_conky_live_maia
 exec --no-startup-id blueman-applet
 exec --no-startup-id clipit
