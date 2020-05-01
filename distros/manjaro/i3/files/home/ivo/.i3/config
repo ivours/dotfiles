@@ -268,7 +268,8 @@ mode "resize" {
 }
 
 # Lock screen
-bindsym $mod+l exec --no-startup-id blurlock
+exec --no-startup-id betterlockscreen -w dim
+bindsym $mod+l exec betterlockscreen -l dim
 
 # Autostart applications
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b --unredir-if-possible

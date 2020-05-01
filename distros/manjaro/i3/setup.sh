@@ -9,6 +9,11 @@ yay -S xkb-switch
 yay -S oomox
 yay -S spotify
 
+# Install betterlockscreen
+yay -S betterlockscreen
+# rm -rf ~/.cache/i3lock
+# betterlockscreen -u $pathToWallpaper
+
 # Remove ALSA and install PulseAudio
 install_pulse
 
